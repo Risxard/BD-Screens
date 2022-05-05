@@ -1,13 +1,46 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+    font-family: 'Gilroy-Bold';
+    src: url(./Components/Layout/Fonts/EM-Gilroy/Gilroy-ExtraBold.ttf) format('truetype');
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+    font-family: 'Gilroy-Regular';
+    src: url(./Components/Layout/Fonts/EM-Gilroy/Gilroy-Regular.ttf) format('truetype');
+
+}
+
+@font-face {
+    font-family: 'Gilroy-Medium';
+    src: url(./Components/Layout/Fonts/EM-Gilroy/Gilroy-Medium.ttf) format('truetype');
+
+}
+
+@font-face {
+    font-family: 'Gilroy-SemiBold';
+    src: url(./Components/Layout/Fonts/EM-Gilroy/Gilroy-SemiBold.ttf) format('truetype');
+
+}
+
+
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body{
+    width: 100%;
+    height: auto;
+}
+
+#root{
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
 }

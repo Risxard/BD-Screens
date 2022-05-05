@@ -1,0 +1,167 @@
+.BackgroundApp-Container {
+    width: 100%;
+    height: clamp(440px, 50vw, 720px);
+
+    position: relative;
+
+}
+
+
+
+
+
+
+
+.Menu-Slider{
+    z-index: 12;
+
+    position: absolute;
+    
+
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    overflow: hidden;
+
+    
+}
+
+.Menu-Inner::-webkit-scrollbar {
+    display: none;
+}
+
+
+.Menu-Inner {
+    overflow-y: scroll;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 24px;
+    transition: 0s ease-in;
+    padding: 16px;
+}
+.Menu-Inner li {
+
+
+
+    display: flex;
+    align-items: center;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+
+    gap: 8px;
+}
+.Menu-Inner li a {
+    text-decoration: none;
+    white-space: nowrap;
+
+    font-family: 'Gilroy-SemiBold';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #807E81;
+}
+.Menu-Inner li svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+.Menu-Inner li {
+    outline: none;
+    cursor: pointer;
+    user-select: none;
+}
+
+.Menu-Inner li svg path {
+    fill: #737174
+}
+
+
+
+.Menu-Inner li:active svg path {
+    fill: #E8ECEF;
+}
+
+
+.Menu-Inner li:active a {
+    color: #E8ECEF;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Register-Container{
+    position: absolute;
+    width: 100%;
+    height: clamp(440px, 50vw, 720px);
+}
+
+
+
+
+
+
+
+
+.BackgroundApp-API{
+    z-index: 11;
+}
+.Bg-filter {
+    user-select: none;
+    z-index: 11;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+    background: linear-gradient(172.23deg, #000000 4.94%, rgba(0, 0, 0, 0.35) 45.74%, rgba(0, 0, 0, 0.9) 92.94%);
+    mix-blend-mode: multiply;
+}
+.Img-Api {
+    width: 100%;
+    height: 100%;
+}
+.Img-Api img {
+    z-index: 10;
+    position: relative;
+    width: 100%;
+    height: clamp(440px, 50vw, 720px);
+    object-fit: cover;
+}
+
+
+@media screen and (min-width: 1280px){
+    .Menu-Slider{
+        display: none;
+    }
+}
